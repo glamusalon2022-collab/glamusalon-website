@@ -1,13 +1,11 @@
-// Glass Navbar on Scroll
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
+    if (!navbar) return;
 
-    if (header) {
-        if (window.scrollY > 20) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
+    if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
     }
 });
