@@ -1,1 +1,1 @@
-console.log("Welcome to Glam U Salon");
+console.log("Glam U Salon Website Loaded");
