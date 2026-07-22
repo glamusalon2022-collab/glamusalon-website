@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glam U Salon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+<div class="logo">GLAM U SALON</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="gallery.html">Gallery</a>
+<a href="branches.html">Branches</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="overlay">
+<h1>Luxury Nail & Lash Destination</h1>
+<p>Russian Manicure • Premium Nails • Signature Lashes</p>
+<a class="btn" href="contact.html">Book Appointment</a>
+</div>
+</section>
+
+<section class="section">
+<h2>Signature Services</h2>
+<div class="cards">
+<div class="card"><h3>Russian Manicure</h3><p>Precision cuticle care with premium finish.</p></div>
+<div class="card"><h3>Premium Nails</h3><p>Soft Gel, Structured Gel & Nail Art.</p></div>
+<div class="card"><h3>Signature Lashes</h3><p>Classic, Wispy, Anime & Medusa Lashes.</p></div>
+</div>
+</section>
+
+<section class="section alt">
+<h2>Why Choose Glam U Salon</h2>
+<p>Professional artists, premium products, and a luxury experience in every visit.</p>
+</section>
+
+<footer>© 2026 Glam U Salon. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
