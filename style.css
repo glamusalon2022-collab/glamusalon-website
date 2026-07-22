@@ -52,6 +52,8 @@ body{
     font-size:32px;
     font-weight:700;
     letter-spacing:2px;
+    color:#fff;
+}
 }
 
 .nav-links{
@@ -62,9 +64,14 @@ body{
 
 .nav-links a{
     text-decoration:none;
-    color:#222;
+    color:#fff;
     font-weight:500;
     transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
 }
 
 .nav-links a:hover{
@@ -282,4 +289,6 @@ header.scrolled{
     backdrop-filter:blur(20px);
     -webkit-backdrop-filter:blur(20px);
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+}.hero{
+    padding-top:120px;
 }
