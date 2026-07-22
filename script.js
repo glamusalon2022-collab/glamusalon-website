@@ -1,1 +1,390 @@
-window.addEventListener('scroll',()=>{const n=document.querySelector('.navbar');n.style.boxShadow=window.scrollY>20?'0 8px 24px rgba(0,0,0,.08)':'none';});
+/* ==========================
+   GLAM U SALON V3
+   Luxury Pearl Theme
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#FAF9F7;
+    color:#1A1A1A;
+    line-height:1.7;
+}
+
+/* ==========================
+   Container
+========================== */
+
+.container{
+    width:90%;
+    max-width:1280px;
+    margin:auto;
+}
+
+/* ==========================
+   Navbar
+========================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(0,0,0,.06);
+}
+
+.navbar .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    text-decoration:none;
+    color:#111;
+    font-size:32px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-size:15px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#B79D73;
+}
+
+.book-btn{
+    background:#111;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:40px;
+}
+
+.book-btn:hover{
+    background:#B79D73;
+    color:white;
+}
+
+/* ==========================
+Hero
+========================== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 25px;
+
+    background:
+    linear-gradient(rgba(250,249,247,.55),rgba(250,249,247,.70)),
+    url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h5{
+    letter-spacing:5px;
+    color:#8A7A63;
+    margin-bottom:20px;
+    font-size:13px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:74px;
+    line-height:1.05;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#555;
+    max-width:650px;
+    margin:auto;
+}
+
+/* Buttons */
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:50px;
+    transition:.35s;
+}
+
+.primary-btn{
+
+    background:#111;
+    color:white;
+
+}
+
+.primary-btn:hover{
+
+    background:#B79D73;
+
+}
+
+.secondary-btn{
+
+    border:1px solid #222;
+    color:#222;
+
+}
+
+.secondary-btn:hover{
+
+    background:#111;
+    color:white;
+
+}
+
+/* ==========================
+Sections
+========================== */
+
+section{
+
+    padding:110px 8%;
+
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+}
+
+/* ==========================
+Cards
+========================== */
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+    border-radius:22px;
+    padding:45px;
+    box-shadow:0 20px 45px rgba(0,0,0,.06);
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    margin-bottom:18px;
+
+}
+
+/* ==========================
+About
+========================== */
+
+.about{
+
+    background:white;
+    text-align:center;
+
+}
+
+.about h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:54px;
+    margin-bottom:20px;
+
+}
+
+.about p{
+
+    max-width:800px;
+    margin:auto;
+    color:#666;
+
+}
+
+/* ==========================
+Branches
+========================== */
+
+.branch{
+
+    background:white;
+    padding:45px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.branch h3{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+
+}
+
+/* ==========================
+CTA
+========================== */
+
+.cta{
+
+    background:#111;
+    color:white;
+    text-align:center;
+
+}
+
+.cta h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:54px;
+    margin-bottom:30px;
+
+}
+
+.cta a{
+
+    background:white;
+    color:#111;
+    padding:16px 40px;
+    text-decoration:none;
+    border-radius:50px;
+
+}
+
+/* ==========================
+Footer
+========================== */
+
+footer{
+
+    padding:40px;
+    text-align:center;
+    background:#F2F2F2;
+    color:#777;
+
+}
+
+/* ==========================
+Responsive
+========================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.section-title h2,
+.about h2,
+.cta h2{
+
+font-size:38px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+section{
+
+padding:80px 25px;
+
+}
+
+}
