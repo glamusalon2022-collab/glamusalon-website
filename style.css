@@ -414,3 +414,42 @@ transform:translateY(0);
 height:60vh;
 
 }
+/* ==========================
+Gallery
+========================== */
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.gallery-item{
+
+overflow:hidden;
+
+border-radius:22px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+display:block;
+
+transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.08);
+
+}
