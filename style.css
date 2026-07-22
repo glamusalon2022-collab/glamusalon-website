@@ -453,3 +453,28 @@ transition:.5s;
 transform:scale(1.08);
 
 }
+/* ==========================
+Booking
+========================== */
+
+.booking-frame{
+
+background:white;
+
+padding:25px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.booking-frame iframe{
+
+border:none;
+
+border-radius:18px;
+
+width:100%;
+
+}
