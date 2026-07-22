@@ -1,115 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAM U SALON | Glamluxe Services</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+GLAM U SALON
+</div>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="branches.html">Branches</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<a href="branches.html" class="book-btn">
+Book Now
+</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<p class="eyebrow">
+Luxury Beauty Destination
+</p>
+
+<h1>
+GLAM U SALON
+</h1>
+
+<h2>
+Glamluxe Services • Premium Nails • Signature Lashes
+</h2>
+
+<p class="hero-text">
+Where every detail is crafted with precision,
+elevated by luxury, and perfected with care.
+</p>
+
+<div class="hero-buttons">
+
+<a href="branches.html" class="primary-btn">
+BOOK NOW
+</a>
+
+<a href="services.html" class="secondary-btn">
+VIEW SERVICES
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</header>
+
+<main>
+
+<section class="section">
+
+<div class="container">
+
+<h2>
+Discover Our Signature Collections
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>✨ Glamluxe Services</h3>
+
+<p>
+Experience precision nail care inspired by Russian techniques, designed for long-lasting beauty and healthy natural nails.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💅 Premium Nails</h3>
+
+<p>
+Classic manicures, gel polish, overlays, extensions and custom nail artistry tailored to your style.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>👁 Signature Lashes</h3>
+
+<p>
+From soft everyday elegance to bold volume sets, achieve lashes that complement your unique look.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section light">
+
+<div class="container">
+
+<h2>
+Why Choose Glam U Salon
+</h2>
+
+<div class="features">
+
+<div class="feature">
+Premium Sterilization & Hygiene Standards
+</div>
+
+<div class="feature">
+Well-trained Nail & Lash Technicians
+</div>
+
+<div class="feature">
+Premium Professional Products
+</div>
+
+<div class="feature">
+Four Convenient Cebu Locations
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container center">
+
+<h2>
+Gallery Preview
+</h2>
+
+<p>
+Discover our latest nail, lash, brow, and foot care transformations.
+</p>
+
+<a href="gallery.html" class="primary-btn">
+VIEW GALLERY
+</a>
+
+</div>
+
+</section>
+
+<section class="section light">
+
+<div class="container">
+
+<h2>
+Visit Our Branches
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Ayala Central Bloc</h3>
+<p>Premium salon experience.</p>
+</div>
+
+<div class="card">
+<h3>Metro Ayala</h3>
+<p>Your beauty destination.</p>
+</div>
+
+<div class="card">
+<h3>SM JMall</h3>
+<p>Luxury nail & lash services.</p>
+</div>
+
+<div class="card">
+<h3>SM Consolacion</h3>
+<p>Professional beauty care.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Ready to Experience Glamluxe?
+</h2>
+
+<p>
+Whether you're looking for flawless nails, beautiful lashes, or premium beauty care, our team is ready to welcome you.
+</p>
+
+<a href="branches.html" class="primary-btn">
+BOOK YOUR APPOINTMENT
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<h3>GLAM U SALON</h3>
+
+<p>
+Glamluxe Services • Premium Nails • Signature Lashes
+</p>
+
+<p>
+© 2026 GLAM U SALON. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
 /* ==========================
-   GLAM U SALON
-   Luxury Website
+   HERO
 ========================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Inter',sans-serif;
-    background:#FAF9F7;
-    color:#222;
-    line-height:1.7;
-}
-
-/* Navigation */
-
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:22px 8%;
-    background:transparent;
-    backdrop-filter:blur(0);
-    -webkit-backdrop-filter:blur(0);
-    transition:all .35s ease;
-    z-index:999;
-    border-bottom:1px solid transparent;
-}
-
-.navbar.scrolled{
-    background:rgba(255,255,255,.75);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    border-bottom:1px solid rgba(0,0,0,.05);
-}
-
-.logo{
-    font-family:'Cormorant Garamond',serif;
-    font-size:32px;
-    font-weight:700;
-    letter-spacing:2px;
-    color:#fff;
-}
-}
-
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#fff;
-    font-weight:500;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#d4af37;
-}
-}
-
-.nav-links a:hover{
-    color:#b38b59;
-}
-
-.book-btn,
-.primary-btn{
-    background:#111;
-    color:white;
-    padding:14px 28px;
-    border-radius:50px;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.book-btn:hover,
-.primary-btn:hover{
-    transform:translateY(-2px);
-    background:#b38b59;
-}
-
-.secondary-btn{
-    border:1px solid #111;
-    padding:14px 28px;
-    border-radius:50px;
-    text-decoration:none;
-    color:#111;
-    margin-left:15px;
-    transition:.3s;
-}
-
-.secondary-btn:hover{
-    background:#111;
-    color:#fff;
-}
-
-/* Hero */
 
 .hero{
     min-height:100vh;
@@ -117,33 +258,27 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-
-    padding:120px 20px 80px;
-
+    padding:140px 20px 100px;
     background:
-    linear-gradient(
-        rgba(255,255,255,.55),
-        rgba(255,255,255,.55)
-    ),
-    url("images/hero.jpg") center/cover no-repeat;
+        linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
+        url("images/hero.jpg") center center / cover no-repeat;
 }
 
 .hero-content{
-    max-width:850px;
-    padding:20px;
+    max-width:900px;
 }
 
 .eyebrow{
     letter-spacing:4px;
     text-transform:uppercase;
-    color:#777;
-    margin-bottom:15px;
+    color:#666;
+    margin-bottom:18px;
 }
 
 .hero h1{
     font-family:'Cormorant Garamond',serif;
     font-size:82px;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .hero h2{
@@ -153,19 +288,30 @@ body{
 }
 
 .hero-text{
-    font-size:19px;
+    max-width:700px;
+    margin:0 auto 40px;
     color:#555;
-    margin-bottom:40px;
+    font-size:19px;
+    line-height:1.8;
 }
 
-/* Sections */
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
 
 .section{
-    padding:110px 8%;
+    padding:100px 8%;
 }
 
 .light{
-    background:white;
+    background:#fff;
 }
 
 .container{
@@ -180,9 +326,12 @@ body{
 .section h2{
     font-family:'Cormorant Garamond',serif;
     font-size:50px;
-    margin-bottom:50px;
-    text-align:center;
+    margin-bottom:45px;
 }
+
+/* ==========================
+   CARDS
+========================== */
 
 .cards{
     display:grid;
@@ -191,33 +340,41 @@ body{
 }
 
 .card{
-    background:white;
+    background:#fff;
     padding:40px;
-    border-radius:20px;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    transition:.3s;
+    border-radius:24px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 }
+
+/* ==========================
+   FEATURES
+========================== */
 
 .features{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:20px;
+    gap:25px;
 }
 
 .feature{
     background:#fff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    padding:28px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
 }
+
+/* ==========================
+   CTA
+========================== */
 
 .cta{
     background:#111;
-    color:white;
+    color:#fff;
     text-align:center;
     padding:100px 20px;
 }
@@ -228,28 +385,47 @@ body{
     margin-bottom:20px;
 }
 
+.cta p{
+    max-width:700px;
+    margin:0 auto 35px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
 footer{
     background:#faf9f7;
     text-align:center;
-    padding:60px 20px;
+    padding:70px 20px;
 }
 
 footer h3{
     font-family:'Cormorant Garamond',serif;
-    font-size:36px;
+    font-size:34px;
     margin-bottom:10px;
 }
+
+/* ==========================
+   MOBILE
+========================== */
 
 @media(max-width:768px){
 
 .navbar{
     flex-direction:column;
-    gap:20px;
+    gap:18px;
+    padding:20px;
 }
 
 .nav-links{
     flex-wrap:wrap;
     justify-content:center;
+    gap:18px;
+}
+
+.hero{
+    padding:170px 20px 80px;
 }
 
 .hero h1{
@@ -258,6 +434,10 @@ footer h3{
 
 .hero h2{
     font-size:18px;
+}
+
+.section{
+    padding:70px 20px;
 }
 
 .section h2{
@@ -269,33 +449,12 @@ footer h3{
 }
 
 .hero-buttons{
-    display:flex;
     flex-direction:column;
-    gap:15px;
+    align-items:center;
 }
 
 .secondary-btn{
     margin-left:0;
 }
 
-}/* ==========================
-   Glass Navbar
-========================== */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:1000;
-    transition:all .35s ease;
-}
-
-header.scrolled{
-    background:rgba(255,255,255,.75);
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}.hero{
-    padding-top:120px;
 }
