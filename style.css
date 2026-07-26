@@ -260,17 +260,17 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:120px;
+    font-size:150px;
 
     font-weight:700;
 
-    line-height:.95;
+    line-height:1;
 
     color:#111;
 
-    letter-spacing:2px;
+    letter-spacing:3px;
 
-    margin-bottom:95px;
+    margin-bottom:75px;
 
 }
 
