@@ -20,6 +20,7 @@ body{
     background:#FAF9F7;
     color:#1A1A1A;
     overflow-x:hidden;
+    line-height:1.6;
 }
 
 /* =====================================================
@@ -37,51 +38,31 @@ body{
 ===================================================== */
 
 .navbar{
-
     position:fixed;
-
     top:0;
-
     left:0;
-
     width:100%;
-
+    height:90px;
     z-index:999;
-
     background:rgba(250,249,247,.88);
-
     backdrop-filter:blur(18px);
-
     border-bottom:1px solid rgba(0,0,0,.05);
-
 }
 
 .navbar .container{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
     height:90px;
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
-
     text-decoration:none;
-
     color:#111;
-
     font-family:'Cormorant Garamond',serif;
-
     font-size:38px;
-
     font-weight:700;
-
     letter-spacing:3px;
-
 }
 
 /* =====================================================
@@ -89,25 +70,16 @@ body{
 ===================================================== */
 
 .menu-btn{
-
     background:none;
-
     border:none;
-
     cursor:pointer;
-
     color:#111;
-
     font-size:34px;
-
     transition:.3s;
-
 }
 
 .menu-btn:hover{
-
     color:#B79D73;
-
 }
 
 /* =====================================================
@@ -115,97 +87,56 @@ body{
 ===================================================== */
 
 .menu-overlay{
-
     position:fixed;
-
     top:0;
-
     left:0;
-
     width:100%;
-
     height:100vh;
-
     background:#FAF9F7;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     visibility:hidden;
-
     opacity:0;
-
     transition:.4s;
-
     z-index:1000;
-
 }
 
 .menu-overlay.active{
-
     visibility:visible;
-
     opacity:1;
-
 }
 
 .close-btn{
-
     position:absolute;
-
     top:35px;
-
     right:40px;
-
     background:none;
-
     border:none;
-
-    font-size:40px;
-
+    font-size:42px;
     cursor:pointer;
-
     color:#111;
-
 }
 
 .mobile-nav{
-
     display:flex;
-
     flex-direction:column;
-
     gap:35px;
-
     text-align:center;
-
 }
 
 .mobile-nav a{
-
     text-decoration:none;
-
     color:#111;
-
     font-family:'Cormorant Garamond',serif;
-
     font-size:46px;
-
-    transition:.3s;
-
     letter-spacing:2px;
-
+    transition:.3s;
 }
 
 .mobile-nav a:hover{
-
     color:#B79D73;
-
 }
-
 /* =====================================================
    HERO
 ===================================================== */
@@ -225,17 +156,15 @@ body{
     padding:120px 20px 80px;
 
     background:
-
     linear-gradient(
         rgba(255,255,255,.45),
         rgba(255,255,255,.75)
     ),
-
-    url("images/hero.jpg");
+    url("image/hero.jpg");
 
     background-size:cover;
-
     background-position:center;
+    background-repeat:no-repeat;
 
 }
 
@@ -255,6 +184,8 @@ body{
 
     font-size:14px;
 
+    font-weight:500;
+
     margin-bottom:35px;
 
 }
@@ -269,11 +200,12 @@ body{
 
     line-height:1;
 
-    margin-bottom:60px;
-
     color:#111;
 
+    margin-bottom:60px;
+
 }
+
 /* =====================================================
    HERO BUTTONS
 ===================================================== */
@@ -354,7 +286,6 @@ body{
     transform:translateY(-3px);
 
 }
-
 /* =====================================================
    FOOTER
 ===================================================== */
@@ -363,9 +294,9 @@ body{
 
     padding:100px 20px 60px;
 
-    text-align:center;
-
     background:#FAF9F7;
+
+    text-align:center;
 
 }
 
@@ -383,35 +314,63 @@ body{
 
     font-size:46px;
 
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:12px;
+
 }
 
-/* ADD THIS HERE */
+.tagline{
+
+    color:#777;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+    margin-bottom:28px;
+
+}
 
 .social-links{
-    margin:25px 0;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     gap:15px;
+
+    margin-bottom:30px;
+
 }
 
-.social-links a{
-    color:#111;
-    text-decoration:none;
-    font-size:14px;
-    letter-spacing:2px;
-    transition:.3s;
-}
-
-.social-links a:hover{
-    color:#B79D73;
-}
-
-.copyright{
+.social-links span{
 
     color:#999;
 
-    font-size:13px;
+}
+
+.social-links a{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+.social-links a:hover{
+
+    color:#B79D73;
 
 }
 
@@ -422,6 +381,8 @@ body{
     font-size:13px;
 
     letter-spacing:1px;
+
+    line-height:1.8;
 
 }
 
@@ -465,6 +426,12 @@ body{
 
 }
 
+::-webkit-scrollbar-track{
+
+    background:#F6F4F1;
+
+}
+
 ::-webkit-scrollbar-thumb{
 
     background:#C7B08A;
@@ -473,24 +440,80 @@ body{
 
 }
 
-::-webkit-scrollbar-track{
+/* =====================================================
+   TEXT SELECTION
+===================================================== */
 
-    background:#F6F4F1;
+::selection{
+
+    background:#B79D73;
+
+    color:#fff;
+
+}
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+a:focus,
+button:focus{
+
+    outline:2px solid #B79D73;
+
+    outline-offset:4px;
 
 }
 /* =====================================================
-   RESPONSIVE
+   RESPONSIVE DESIGN
 ===================================================== */
 
-@media (max-width:1024px){
+/* ---------- Large Desktop ---------- */
+
+@media (max-width:1200px){
 
     .hero h1{
+        font-size:90px;
+    }
 
-        font-size:82px;
+    .container{
+        width:92%;
+    }
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+    .hero{
+
+        padding:120px 30px 80px;
 
     }
 
-    .mobile-nav a{
+    .hero h1{
+
+        font-size:72px;
+
+    }
+
+    .hero-subtitle{
+
+        letter-spacing:6px;
+
+        font-size:13px;
+
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:280px;
+
+    }
+
+    .footer h3{
 
         font-size:40px;
 
@@ -498,7 +521,15 @@ body{
 
 }
 
+/* ---------- Mobile ---------- */
+
 @media (max-width:768px){
+
+    .navbar{
+
+        height:80px;
+
+    }
 
     .navbar .container{
 
@@ -520,103 +551,6 @@ body{
 
     }
 
-    .hero{
-
-        padding:110px 25px 70px;
-
-    }
-
-    .hero-subtitle{
-
-        font-size:12px;
-
-        letter-spacing:5px;
-
-        margin-bottom:25px;
-
-    }
-
-    .hero h1{
-
-        font-size:60px;
-
-        margin-bottom:45px;
-
-    }
-
-    .hero-buttons{
-
-        width:100%;
-
-    }
-
-    .primary-btn,
-    .secondary-btn{
-
-        width:100%;
-        max-width:320px;
-
-    }
-
-    .mobile-nav a{
-
-        font-size:34px;
-
-    }
-
-    .footer{
-
-        padding:60px 20px 40px;
-
-    }
-
-    .footer h3{
-
-        font-size:34px;
-
-    }
-
-}
-
-@media (max-width:480px){
-
-    .logo{
-
-        font-size:24px;
-
-    }
-
-    .menu-btn{
-
-        font-size:28px;
-
-    }
-
-    .hero-subtitle{
-
-        font-size:11px;
-
-        letter-spacing:4px;
-
-    }
-
-    .hero h1{
-
-        font-size:44px;
-
-        line-height:1.1;
-
-    }
-
-    .primary-btn,
-    .secondary-btn{
-
-        font-size:14px;
-
-        padding:16px 20px;
-
-    }
-
     .mobile-nav{
 
         gap:28px;
@@ -625,31 +559,117 @@ body{
 
     .mobile-nav a{
 
-        font-size:28px;
+        font-size:34px;
 
     }
 
-    .close-btn{
+    .hero{
 
-        top:25px;
+        min-height:100vh;
 
-        right:25px;
+        padding:120px 25px 70px;
 
-        font-size:34px;
+    }
+
+    .hero-subtitle{
+
+        font-size:12px;
+
+        letter-spacing:4px;
+
+    }
+
+    .hero h1{
+
+        font-size:52px;
+
+        margin-bottom:40px;
+
+    }
+
+    .hero-buttons{
+
+        gap:16px;
+
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:100%;
+
+        max-width:320px;
+
+        font-size:14px;
+
+        padding:16px 20px;
+
+    }
+
+    .footer{
+
+        padding:70px 20px 40px;
 
     }
 
     .footer h3{
 
-        font-size:28px;
+        font-size:34px;
 
     }
 
-    .established{
+    .social-links{
 
-        font-size:12px;
+        flex-direction:column;
 
-        letter-spacing:4px;
+        gap:12px;
+
+    }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:480px){
+
+    .hero{
+
+        padding:110px 20px 60px;
+
+    }
+
+    .hero-subtitle{
+
+        letter-spacing:3px;
+
+        font-size:11px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .logo{
+
+        font-size:26px;
+
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        font-size:13px;
+
+        padding:15px 18px;
+
+    }
+
+    .footer h3{
+
+        font-size:30px;
 
     }
 
@@ -659,191 +679,182 @@ body{
 
     }
 
-}
-
-/* =====================================================
-   SELECTION
-===================================================== */
-
-::selection{
-
-    background:#B79D73;
-
-    color:#ffffff;
-
-}
-
-/* =====================================================
-   FOCUS
-===================================================== */
-
-a:focus,
-button:focus{
-
-    outline:2px solid #B79D73;
-
-    outline-offset:4px;
-
-}
-/* ==========================
-   BOOK PAGE
-========================== */
-
-.book-page{
-
-    padding:180px 20px 80px;
-
-    text-align:center;
-
-}
-.branches{
-
-    padding:20px 20px 120px;
-
-}
-
-.branch-card{
-
-    max-width:650px;
-
-    margin:0 auto;
-
-}
-.book-page h1{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:90px;
-
-    font-weight:700;
-
-    margin-bottom:20px;
-
-}
-.book-description{
-
-    max-width:600px;
-
-    margin:auto;
-
-    font-size:18px;
-
-    color:#666;
-
-}
-.book-container{
-
-    max-width:900px;
-
-    margin:auto;
-
-}
-
-/* BOOK PAGE BUTTON */
-
-.branch-card .primary-btn{
-
-    width:200px;
-
-    padding:14px 20px;
-
-    font-size:13px;
-
-}
 /* =====================================================
    BOOK PAGE
 ===================================================== */
 
 .book-hero{
+
     padding:170px 20px 80px;
+
     text-align:center;
+
+    background:#FAF9F7;
+
+}
+
+.book-hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:20px;
+
 }
 
 .book-description{
+
     max-width:650px;
-    margin:20px auto 0;
-    color:#666;
+
+    margin:auto;
+
     font-size:18px;
+
+    color:#666;
+
     line-height:1.8;
+
 }
 
 /* =====================================================
-   BRANCH SECTION
+   BRANCHES
 ===================================================== */
 
 .branches{
-    padding:20px 20px 120px;
+
+    padding:30px 20px 120px;
+
 }
 
 .branch-grid{
+
     display:grid;
+
     grid-template-columns:repeat(2,1fr);
+
     gap:40px;
+
+    max-width:1300px;
+
+    margin:auto;
+
 }
 
 .branch-card{
+
     background:#fff;
-    border:1px solid #ECECEC;
-    border-radius:24px;
+
+    border-radius:26px;
+
     overflow:hidden;
-    text-align:center;
-    box-shadow:0 18px 45px rgba(0,0,0,.06);
+
+    border:1px solid #ECECEC;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.06);
+
     transition:.35s;
-    padding-bottom:35px;
+
 }
 
 .branch-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 25px 55px rgba(0,0,0,.10);
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.10);
+
 }
 
 .branch-card img{
+
     width:100%;
-    height:300px;
+
+    height:320px;
+
     object-fit:cover;
+
     display:block;
+
 }
 
-.branch-card h2{
+.branch-info{
+
+    padding:35px;
+
+    text-align:center;
+
+}
+
+.branch-info h2{
+
     font-family:'Cormorant Garamond',serif;
-    font-size:38px;
-    margin:28px 20px 15px;
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
     color:#111;
+
 }
 
-.branch-card p{
+.branch-info p{
+
     color:#666;
-    margin:8px 30px;
-    line-height:1.7;
+
     font-size:15px;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
 }
 
 .branch-btn{
+
     display:inline-block;
-    margin-top:28px;
-    padding:16px 40px;
-    background:#111;
-    color:#fff;
-    text-decoration:none;
+
+    margin-top:25px;
+
+    padding:16px 42px;
+
     border-radius:999px;
-    font-size:14px;
-    letter-spacing:2px;
+
+    background:#111;
+
+    color:#fff;
+
+    text-decoration:none;
+
     text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
     transition:.35s;
+
 }
 
 .branch-btn:hover{
+
     background:#B79D73;
+
 }
 
 /* =====================================================
-   RESPONSIVE
+   BOOK PAGE RESPONSIVE
 ===================================================== */
 
 @media (max-width:992px){
 
     .branch-grid{
+
         grid-template-columns:1fr;
+
     }
 
 }
@@ -851,15 +862,61 @@ button:focus{
 @media (max-width:768px){
 
     .book-hero{
-        padding:140px 20px 70px;
+
+        padding:140px 25px 70px;
+
+    }
+
+    .book-hero h1{
+
+        font-size:52px;
+
+    }
+
+    .book-description{
+
+        font-size:16px;
+
     }
 
     .branch-card img{
-        height:240px;
+
+        height:250px;
+
     }
 
-    .branch-card h2{
-        font-size:32px;
+    .branch-info{
+
+        padding:28px;
+
+    }
+
+    .branch-info h2{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .book-hero h1{
+
+        font-size:42px;
+
+    }
+
+    .branch-card img{
+
+        height:220px;
+
+    }
+
+    .branch-btn{
+
+        width:100%;
+
     }
 
 }
