@@ -691,17 +691,22 @@ button:focus{
 
 .book-page{
 
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    padding:180px 20px 80px;
 
     text-align:center;
 
-    padding:120px 20px;
+}
+.branches{
+
+    padding:20px 20px 120px;
+
+}
+
+.branch-card{
+
+    max-width:650px;
+
+    margin:0 auto;
 
 }
 .book-page h1{
