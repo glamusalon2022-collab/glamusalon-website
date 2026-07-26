@@ -726,3 +726,10 @@ button:focus{
     color:#666;
 
 }
+.book-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
