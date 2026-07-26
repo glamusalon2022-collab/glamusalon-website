@@ -685,3 +685,44 @@ button:focus{
     outline-offset:4px;
 
 }
+/* ==========================
+   BOOK PAGE
+========================== */
+
+.book-page{
+
+    min-height:40vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px 60px;
+
+}
+
+.book-page h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.book-description{
+
+    max-width:600px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    color:#666;
+
+}
