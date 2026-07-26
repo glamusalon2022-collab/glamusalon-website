@@ -214,7 +214,7 @@ body{
 
     text-align:center;
 
-    padding:80px 20px;
+    padding:140px 20px 100px;
 
     background:
 
@@ -264,16 +264,15 @@ body{
 
     font-weight:700;
 
-    line-height:1;
+    line-height:.95;
 
     color:#111;
 
-    letter-spacing:3px;
+    letter-spacing:2px;
 
-    margin-bottom:75px;
+    margin-bottom:95px;
 
 }
-
 /* =====================================================
    HERO BUTTONS
 ===================================================== */
@@ -498,7 +497,6 @@ body{
     background:#B79D73;
 
 }
-
 /* =====================================================
    RESPONSIVE DESIGN
 ===================================================== */
