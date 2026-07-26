@@ -19,46 +19,369 @@
 
 <body>
 
-<section class="book-page">
+<!-- BOOK HERO -->
 
-    <div class="container book-container">
+<section class="book-hero">
 
-        <p class="hero-subtitle">
-            BOOK YOUR APPOINTMENT
-        </p>
+<div class="container">
 
-        <p class="book-description">
-            Select your preferred branch to continue with your online appointment.
-        </p>
+<p class="hero-subtitle">
+BOOK YOUR APPOINTMENT
+</p>
 
-    </div>
+<h1>
+Choose Your Branch
+</h1>
+
+<p class="book-description">
+
+Select your preferred branch to continue with your online appointment.
+
+</p>
+
+</div>
 
 </section>
+
+<!-- BRANCHES -->
 
 <section class="branches">
 
-    <div class="container">
+<div class="container branch-grid">
 
-        <div class="branch-card">
+<!-- AYALA -->
 
-            <img src="images/ayala.jpg" alt="Ayala Central Bloc">
+<div class="branch-card">
 
-            <h2>Ayala Central Bloc</h2>
+<img src="images/ayala.jpg" alt="Ayala Central Bloc">
 
-            <p>📍 4th Floor, Ayala Central Bloc, IT Park, Cebu City</p>
+<h2>Ayala Central Bloc</h2>
 
-            <p>📞 Contact Number</p>
+<p>
+📍 4th Floor, Ayala Central Bloc,
+IT Park, Cebu City
+</p>
 
-            <a href="YOUR_APPSCRIPT_LINK" class="primary-btn">
-                BOOK NOW →
-            </a>
+<p>
+📞 Contact Number
+</p>
 
-        </div>
+<a href="YOUR_AYALA_APPSCRIPT_LINK" class="branch-btn">
+BOOK NOW →
+</a>
 
-    </div>
+</div>
+
+<!-- METRO -->
+
+<div class="branch-card">
+
+<img src="images/metro.jpg" alt="Metro Ayala">
+
+<h2>Metro Ayala</h2>
+
+<p>
+📍 7th Floor,
+Metro Ayala,
+Cebu Business Park
+</p>
+
+<p>
+📞 Contact Number
+</p>
+
+<a href="YOUR_METRO_APPSCRIPT_LINK" class="branch-btn">
+BOOK NOW →
+</a>
+
+</div>
+
+<!-- SM CONSOLACION -->
+
+<div class="branch-card">
+
+<img src="images/smconsolacion.jpg" alt="SM Consolacion">
+
+<h2>SM Consolacion</h2>
+
+<p>
+📍 2nd Floor,
+SM City Consolacion
+</p>
+
+<p>
+📞 (0908) 600 8165
+</p>
+
+<a href="YOUR_SMCONSOLACION_APPSCRIPT_LINK" class="branch-btn">
+BOOK NOW →
+</a>
+
+</div>
+
+<!-- JMALL -->
+
+<div class="branch-card">
+
+<img src="images/jmall.jpg" alt="SM JMall">
+
+<h2>SM JMall</h2>
+
+<p>
+📍 Level 3,
+SM JMall,
+Mandaue City
+</p>
+
+<p>
+📞 Contact Number
+</p>
+
+<a href="YOUR_JMALL_APPSCRIPT_LINK" class="branch-btn">
+BOOK NOW →
+</a>
+
+</div>
+
+</div>
 
 </section>
+
+<footer class="footer">
+
+<div class="footer-content">
+
+<h3>GLAM U SALON</h3>
+
+<p class="tagline">
+
+Premium Nails & Lashes in Cebu
+
+</p>
+
+<div class="social-links">
+
+<a href="#">Facebook</a>
+
+<span>•</span>
+
+<a href="#">Instagram</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 Glam U Salon
+
+<br>
+
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
 
 </body>
 
 </html>
+/* =====================================================
+   BOOK PAGE
+===================================================== */
+
+.book-hero{
+
+    padding:180px 20px 100px;
+
+    text-align:center;
+
+}
+
+.book-hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin:25px 0;
+
+}
+
+.book-description{
+
+    max-width:600px;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* =====================================================
+   BRANCHES
+===================================================== */
+
+.branches{
+
+    padding:0 20px 120px;
+
+}
+
+.branch-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.branch-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:1px solid #eee;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+    text-align:center;
+
+    padding-bottom:35px;
+
+}
+
+.branch-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.10);
+
+}
+
+.branch-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.branch-card h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:40px;
+
+    margin:30px 20px 15px;
+
+}
+
+.branch-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin:8px 30px;
+
+    font-size:15px;
+
+}
+
+/* =====================================================
+   BOOK BUTTON
+===================================================== */
+
+.branch-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:16px 34px;
+
+    background:#111;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    transition:.35s;
+
+}
+
+.branch-btn:hover{
+
+    background:#B79D73;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+    .branch-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .book-hero h1{
+
+        font-size:52px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .book-hero{
+
+        padding:140px 20px 70px;
+
+    }
+
+    .branch-card img{
+
+        height:240px;
+
+    }
+
+    .branch-card h2{
+
+        font-size:34px;
+
+    }
+
+}
