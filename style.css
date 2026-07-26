@@ -361,7 +361,7 @@ body{
 
 .footer{
 
-    padding:80px 20px 60px;
+    padding:100px 20px 60px;
 
     text-align:center;
 
@@ -371,7 +371,7 @@ body{
 
 .footer-content{
 
-    max-width:600px;
+    max-width:700px;
 
     margin:auto;
 
@@ -381,25 +381,37 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:42px;
-
-    letter-spacing:3px;
-
-    margin-bottom:10px;
+    font-size:46px;
 
 }
 
-.established{
+/* ADD THIS HERE */
 
+.social-links{
+    margin:25px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.social-links a{
+    color:#111;
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:2px;
+    transition:.3s;
+}
+
+.social-links a:hover{
     color:#B79D73;
+}
 
-    letter-spacing:5px;
+.copyright{
+
+    color:#999;
 
     font-size:13px;
-
-    text-transform:uppercase;
-
-    margin-bottom:25px;
 
 }
 
