@@ -1,6 +1,6 @@
 /* =====================================================
    GLAM U SALON
-   Luxury Minimal Theme
+   Luxury Minimal Style
 ===================================================== */
 
 /* RESET */
@@ -16,12 +16,10 @@ html{
 }
 
 body{
-
     font-family:'Inter',sans-serif;
     background:#FAF9F7;
-    color:#111;
+    color:#1A1A1A;
     overflow-x:hidden;
-
 }
 
 /* =====================================================
@@ -29,11 +27,9 @@ body{
 ===================================================== */
 
 .container{
-
     width:90%;
-    max-width:1400px;
+    max-width:1280px;
     margin:auto;
-
 }
 
 /* =====================================================
@@ -43,12 +39,16 @@ body{
 .navbar{
 
     position:fixed;
+
     top:0;
+
     left:0;
+
     width:100%;
+
     z-index:999;
 
-    background:rgba(250,249,247,.90);
+    background:rgba(250,249,247,.88);
 
     backdrop-filter:blur(18px);
 
@@ -58,13 +58,13 @@ body{
 
 .navbar .container{
 
-    height:95px;
-
     display:flex;
 
     justify-content:space-between;
 
     align-items:center;
+
+    height:90px;
 
 }
 
@@ -76,7 +76,7 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:42px;
+    font-size:38px;
 
     font-weight:700;
 
@@ -118,7 +118,13 @@ body{
 
     position:fixed;
 
-    inset:0;
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100vh;
 
     background:#FAF9F7;
 
@@ -132,7 +138,7 @@ body{
 
     opacity:0;
 
-    transition:.35s;
+    transition:.4s;
 
     z-index:1000;
 
@@ -158,11 +164,11 @@ body{
 
     border:none;
 
+    font-size:40px;
+
     cursor:pointer;
 
     color:#111;
-
-    font-size:42px;
 
 }
 
@@ -174,6 +180,8 @@ body{
 
     gap:35px;
 
+    text-align:center;
+
 }
 
 .mobile-nav a{
@@ -184,11 +192,11 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:48px;
-
-    letter-spacing:2px;
+    font-size:46px;
 
     transition:.3s;
+
+    letter-spacing:2px;
 
 }
 
@@ -214,29 +222,26 @@ body{
 
     text-align:center;
 
-    padding:140px 20px 100px;
+    padding:120px 20px 80px;
 
     background:
 
-    radial-gradient(
+    linear-gradient(
+        rgba(255,255,255,.45),
+        rgba(255,255,255,.75)
+    ),
 
-        circle at top,
+    url("images/hero.jpg");
 
-        #FFFFFF 0%,
+    background-size:cover;
 
-        #FCFBF9 45%,
-
-        #F7F5F2 75%,
-
-        #F2EFEB 100%
-
-    );
+    background-position:center;
 
 }
 
 .hero-content{
 
-    max-width:1200px;
+    max-width:900px;
 
 }
 
@@ -244,15 +249,13 @@ body{
 
     color:#B79D73;
 
-    text-transform:uppercase;
+    letter-spacing:8px;
 
-    letter-spacing:10px;
+    text-transform:uppercase;
 
     font-size:14px;
 
-    font-weight:500;
-
-    margin-bottom:85px;
+    margin-bottom:35px;
 
 }
 
@@ -260,17 +263,15 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:150px;
+    font-size:110px;
 
     font-weight:700;
 
-    line-height:.95;
+    line-height:1;
+
+    margin-bottom:60px;
 
     color:#111;
-
-    letter-spacing:2px;
-
-    margin-bottom:95px;
 
 }
 /* =====================================================
@@ -285,16 +286,16 @@ body{
 
     align-items:center;
 
-    gap:24px;
+    gap:20px;
 
 }
 
 .primary-btn,
 .secondary-btn{
 
-    width:340px;
+    width:320px;
 
-    padding:20px 30px;
+    padding:18px 28px;
 
     border-radius:999px;
 
@@ -314,8 +315,6 @@ body{
 
 }
 
-/* Primary Button */
-
 .primary-btn{
 
     background:#111;
@@ -323,8 +322,6 @@ body{
     color:#fff;
 
     border:1px solid #111;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 }
 
@@ -334,15 +331,9 @@ body{
 
     border-color:#B79D73;
 
-    color:#fff;
-
-    transform:translateY(-4px);
-
-    box-shadow:0 20px 40px rgba(183,157,115,.25);
+    transform:translateY(-3px);
 
 }
-
-/* Secondary Buttons */
 
 .secondary-btn{
 
@@ -350,7 +341,7 @@ body{
 
     color:#111;
 
-    border:1px solid #B79D73;
+    border:1px solid #111;
 
 }
 
@@ -360,9 +351,7 @@ body{
 
     color:#fff;
 
-    border-color:#111;
-
-    transform:translateY(-4px);
+    transform:translateY(-3px);
 
 }
 
@@ -372,7 +361,7 @@ body{
 
 .footer{
 
-    padding:100px 20px 60px;
+    padding:80px 20px 60px;
 
     text-align:center;
 
@@ -382,7 +371,7 @@ body{
 
 .footer-content{
 
-    max-width:700px;
+    max-width:600px;
 
     margin:auto;
 
@@ -392,9 +381,7 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:46px;
-
-    font-weight:700;
+    font-size:42px;
 
     letter-spacing:3px;
 
@@ -406,23 +393,11 @@ body{
 
     color:#B79D73;
 
-    text-transform:uppercase;
-
-    letter-spacing:6px;
+    letter-spacing:5px;
 
     font-size:13px;
 
-    margin-bottom:18px;
-
-}
-
-.tagline{
-
-    color:#888;
-
-    font-size:15px;
-
-    letter-spacing:1px;
+    text-transform:uppercase;
 
     margin-bottom:25px;
 
@@ -430,7 +405,7 @@ body{
 
 .copyright{
 
-    color:#999;
+    color:#777;
 
     font-size:13px;
 
@@ -439,7 +414,7 @@ body{
 }
 
 /* =====================================================
-   FADE ANIMATION
+   ANIMATIONS
 ===================================================== */
 
 .hero-content{
@@ -478,12 +453,6 @@ body{
 
 }
 
-::-webkit-scrollbar-track{
-
-    background:#F5F3F0;
-
-}
-
 ::-webkit-scrollbar-thumb{
 
     background:#C7B08A;
@@ -492,79 +461,26 @@ body{
 
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-track{
 
-    background:#B79D73;
+    background:#F6F4F1;
 
 }
 /* =====================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 ===================================================== */
 
-@media (max-width:1200px){
+@media (max-width:1024px){
 
     .hero h1{
 
-        font-size:120px;
-
-    }
-
-}
-
-@media (max-width:992px){
-
-    .navbar .container{
-
-        height:85px;
-
-    }
-
-    .logo{
-
-        font-size:34px;
-
-    }
-
-    .menu-btn{
-
-        font-size:32px;
-
-    }
-
-    .hero{
-
-        padding:130px 25px 90px;
-
-    }
-
-    .hero-subtitle{
-
-        font-size:13px;
-
-        letter-spacing:8px;
-
-        margin-bottom:70px;
-
-    }
-
-    .hero h1{
-
-        font-size:95px;
-
-        margin-bottom:80px;
-
-    }
-
-    .primary-btn,
-    .secondary-btn{
-
-        width:320px;
+        font-size:82px;
 
     }
 
     .mobile-nav a{
 
-        font-size:42px;
+        font-size:40px;
 
     }
 
@@ -580,7 +496,7 @@ body{
 
     .logo{
 
-        font-size:28px;
+        font-size:30px;
 
         letter-spacing:2px;
 
@@ -594,7 +510,7 @@ body{
 
     .hero{
 
-        padding:120px 20px 80px;
+        padding:110px 25px 70px;
 
     }
 
@@ -602,25 +518,23 @@ body{
 
         font-size:12px;
 
-        letter-spacing:6px;
+        letter-spacing:5px;
 
-        margin-bottom:55px;
+        margin-bottom:25px;
 
     }
 
     .hero h1{
 
-        font-size:68px;
+        font-size:60px;
 
-        line-height:1;
-
-        margin-bottom:60px;
+        margin-bottom:45px;
 
     }
 
     .hero-buttons{
 
-        gap:18px;
+        width:100%;
 
     }
 
@@ -628,18 +542,7 @@ body{
     .secondary-btn{
 
         width:100%;
-
         max-width:320px;
-
-        font-size:14px;
-
-        padding:18px 24px;
-
-    }
-
-    .mobile-nav{
-
-        gap:28px;
 
     }
 
@@ -651,13 +554,13 @@ body{
 
     .footer{
 
-        padding:70px 20px 50px;
+        padding:60px 20px 40px;
 
     }
 
     .footer h3{
 
-        font-size:36px;
+        font-size:34px;
 
     }
 
@@ -687,18 +590,24 @@ body{
 
     .hero h1{
 
-        font-size:52px;
+        font-size:44px;
 
-        margin-bottom:50px;
+        line-height:1.1;
 
     }
 
     .primary-btn,
     .secondary-btn{
 
-        max-width:280px;
+        font-size:14px;
 
         padding:16px 20px;
+
+    }
+
+    .mobile-nav{
+
+        gap:28px;
 
     }
 
@@ -720,21 +629,15 @@ body{
 
     .footer h3{
 
-        font-size:30px;
+        font-size:28px;
 
     }
 
     .established{
 
-        letter-spacing:4px;
-
         font-size:12px;
 
-    }
-
-    .tagline{
-
-        font-size:14px;
+        letter-spacing:4px;
 
     }
 
@@ -747,7 +650,7 @@ body{
 }
 
 /* =====================================================
-   TEXT SELECTION
+   SELECTION
 ===================================================== */
 
 ::selection{
@@ -759,7 +662,7 @@ body{
 }
 
 /* =====================================================
-   KEYBOARD ACCESSIBILITY
+   FOCUS
 ===================================================== */
 
 a:focus,
@@ -768,16 +671,5 @@ button:focus{
     outline:2px solid #B79D73;
 
     outline-offset:4px;
-
-}
-
-/* =====================================================
-   SMOOTH TRANSITIONS
-===================================================== */
-
-a,
-button{
-
-    transition:all .3s ease;
 
 }
