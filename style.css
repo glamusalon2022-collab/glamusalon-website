@@ -733,3 +733,15 @@ button:focus{
     margin:auto;
 
 }
+
+/* BOOK PAGE BUTTON */
+
+.branch-card .primary-btn{
+
+    width:200px;
+
+    padding:14px 20px;
+
+    font-size:13px;
+
+}
