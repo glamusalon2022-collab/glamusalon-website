@@ -1,7 +1,9 @@
-/* ==========================
-   GLAM U SALON V3
-   Luxury Pearl Theme
-========================== */
+/* ==========================================
+   GLAM U SALON
+   Luxury Pearl White Theme
+========================================== */
+
+/* RESET */
 
 *{
     margin:0;
@@ -20,9 +22,7 @@ body{
     line-height:1.7;
 }
 
-/* ==========================
-   Container
-========================== */
+/* CONTAINER */
 
 .container{
     width:90%;
@@ -30,9 +30,7 @@ body{
     margin:auto;
 }
 
-/* ==========================
-   Navbar
-========================== */
+/* NAVBAR */
 
 .navbar{
     position:fixed;
@@ -40,31 +38,31 @@ body{
     left:0;
     width:100%;
     z-index:999;
-    background:rgba(255,255,255,.82);
+    background:rgba(255,255,255,.88);
     backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(0,0,0,.06);
+    border-bottom:1px solid rgba(0,0,0,.05);
 }
 
 .navbar .container{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 0;
+    padding:22px 0;
 }
 
 .logo{
     text-decoration:none;
     color:#111;
-    font-size:32px;
     font-family:'Cormorant Garamond',serif;
+    font-size:34px;
     font-weight:700;
-    letter-spacing:2px;
+    letter-spacing:3px;
 }
 
 nav{
     display:flex;
     align-items:center;
-    gap:30px;
+    gap:32px;
 }
 
 nav a{
@@ -81,86 +79,100 @@ nav a:hover{
 .book-btn{
     background:#111;
     color:#fff;
-    padding:14px 28px;
+    padding:14px 30px;
     border-radius:40px;
 }
 
 .book-btn:hover{
     background:#B79D73;
-    color:white;
+    color:#fff;
 }
 
-/* ==========================
-Hero
-========================== */
+/* HERO */
 
 .hero{
 
-height:100vh;
+    height:100vh;
 
-background:
-linear-gradient(
-rgba(250,249,247,.35),
-rgba(250,249,247,.70)
-),
-url("images/hero.jpg");
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-background-size:cover;
+    text-align:center;
 
-background-position:center;
+    background:
+    linear-gradient(
+    rgba(255,255,255,.45),
+    rgba(255,255,255,.75)
+    ),
+    url("images/hero.jpg");
 
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
+    background-size:cover;
+    background-position:center;
 }
 
 .hero-content{
-    max-width:850px;
+
+    max-width:900px;
+    padding:0 20px;
+
 }
 
 .hero h5{
-    letter-spacing:5px;
+
+    font-size:14px;
+    letter-spacing:6px;
     color:#8A7A63;
-    margin-bottom:20px;
-    font-size:13px;
+    margin-bottom:25px;
+
 }
 
 .hero h1{
+
     font-family:'Cormorant Garamond',serif;
-    font-size:74px;
-    line-height:1.05;
-    margin-bottom:25px;
+    font-size:90px;
+    line-height:1;
+    margin-bottom:30px;
+
 }
 
 .hero p{
+
     font-size:18px;
     color:#555;
-    max-width:650px;
+    max-width:700px;
     margin:auto;
+
 }
 
-/* Buttons */
-
 .hero-buttons{
-    margin-top:40px;
+
     display:flex;
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
+
+    margin-top:45px;
+
 }
+
+/* BUTTONS */
 
 .primary-btn,
 .secondary-btn{
 
+    display:inline-block;
+
     text-decoration:none;
-    padding:16px 34px;
+
+    padding:18px 42px;
+
     border-radius:50px;
+
     transition:.35s;
+
+    font-size:15px;
+
 }
 
 .primary-btn{
@@ -178,8 +190,8 @@ text-align:center;
 
 .secondary-btn{
 
-    border:1px solid #222;
-    color:#222;
+    border:1px solid #111;
+    color:#111;
 
 }
 
@@ -190,9 +202,7 @@ text-align:center;
 
 }
 
-/* ==========================
-Sections
-========================== */
+/* SECTIONS */
 
 section{
 
@@ -210,7 +220,7 @@ section{
 .section-title h2{
 
     font-family:'Cormorant Garamond',serif;
-    font-size:52px;
+    font-size:56px;
     margin-bottom:15px;
 
 }
@@ -221,24 +231,29 @@ section{
 
 }
 
-/* ==========================
-Cards
-========================== */
+/* GRID */
 
 .grid{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
 
 }
 
+/* ==========================================
+   SERVICE CARDS
+========================================== */
+
 .card{
 
-    background:white;
-    border-radius:22px;
-    padding:45px;
+    background:#fff;
+    padding:60px;
+    border-radius:28px;
     box-shadow:0 20px 45px rgba(0,0,0,.06);
+
+    text-align:center;
+
     transition:.35s;
 
 }
@@ -252,67 +267,78 @@ Cards
 .card h3{
 
     font-family:'Cormorant Garamond',serif;
-    font-size:32px;
-    margin-bottom:18px;
+    font-size:38px;
 
-}
-
-/* ==========================
-About
-========================== */
-
-.about{
-
-    background:white;
-    text-align:center;
-
-}
-
-.about h2{
-
-    font-family:'Cormorant Garamond',serif;
-    font-size:54px;
     margin-bottom:20px;
 
 }
 
-.about p{
+.card p{
 
-    max-width:800px;
-    margin:auto;
     color:#666;
+
+    margin-bottom:35px;
 
 }
 
-/* ==========================
-Branches
-========================== */
+.card .secondary-btn{
+
+    display:inline-block;
+
+}
+
+/* ==========================================
+   BRANCHES
+========================================== */
 
 .branch{
 
-    background:white;
-    padding:45px;
+    background:#fff;
+
+    padding:50px;
+
+    border-radius:25px;
+
     text-align:center;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.branch:hover{
+
+    transform:translateY(-10px);
 
 }
 
 .branch h3{
 
     font-family:'Cormorant Garamond',serif;
-    font-size:30px;
+
+    font-size:34px;
+
+    margin-bottom:15px;
 
 }
 
-/* ==========================
-CTA
-========================== */
+.branch p{
+
+    color:#777;
+
+}
+
+/* ==========================================
+   CTA
+========================================== */
 
 .cta{
 
     background:#111;
-    color:white;
+
+    color:#fff;
+
     text-align:center;
 
 }
@@ -320,170 +346,245 @@ CTA
 .cta h2{
 
     font-family:'Cormorant Garamond',serif;
-    font-size:54px;
-    margin-bottom:30px;
+
+    font-size:56px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    color:#ddd;
+
+    margin-bottom:35px;
 
 }
 
 .cta a{
 
-    background:white;
+    display:inline-block;
+
+    background:#fff;
+
     color:#111;
-    padding:16px 40px;
+
     text-decoration:none;
+
+    padding:18px 42px;
+
     border-radius:50px;
+
+    transition:.35s;
 
 }
 
-/* ==========================
-Footer
-========================== */
+.cta a:hover{
+
+    background:#B79D73;
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
 
 footer{
 
+    background:#F3F3F3;
+
     padding:40px;
+
     text-align:center;
-    background:#F2F2F2;
+
     color:#777;
 
-}
-
-/* ==========================
-Responsive
-========================== */
-
-@media(max-width:900px){
-
-.hero h1{
-
-font-size:50px;
+    font-size:14px;
 
 }
 
-nav{
-
-display:none;
-
-}
-
-.section-title h2,
-.about h2,
-.cta h2{
-
-font-size:38px;
-
-}
-
-}
-
-@media(max-width:600px){
-
-.hero h1{
-
-font-size:40px;
-
-}
-
-.hero p{
-
-font-size:16px;
-
-}
-
-section{
-
-padding:80px 25px;
-
-}
-
-}
-/*=====================================
-Animations
-=====================================*/
+/* ==========================================
+   ANIMATIONS
+========================================== */
 
 .hidden{
 
-opacity:0;
+    opacity:0;
 
-transform:translateY(60px);
+    transform:translateY(60px);
 
-transition:all .8s ease;
+    transition:all .8s ease;
 
 }
 
 .show{
 
-opacity:1;
+    opacity:1;
 
-transform:translateY(0);
+    transform:translateY(0);
 
 }
+
+/* ==========================================
+   SMALL HERO
+========================================== */
+
 .small-hero{
 
-height:60vh;
+    height:60vh;
 
-}
-/* ==========================
-Gallery
-========================== */
+    display:flex;
 
-.gallery-grid{
+    align-items:center;
 
-display:grid;
+    justify-content:center;
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:25px;
+    text-align:center;
 
 }
 
-.gallery-item{
+.small-hero h1{
 
-overflow:hidden;
+    font-family:'Cormorant Garamond',serif;
 
-border-radius:22px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.08);
+    font-size:70px;
 
 }
 
-.gallery-item img{
-
-width:100%;
-
-display:block;
-
-transition:.5s;
-
-}
-
-.gallery-item:hover img{
-
-transform:scale(1.08);
-
-}
-/* ==========================
-Booking
-========================== */
+/* ==========================================
+   BOOKING
+========================================== */
 
 .booking-frame{
 
-background:white;
+    background:#fff;
 
-padding:25px;
+    padding:25px;
 
-border-radius:25px;
+    border-radius:25px;
 
-box-shadow:0 15px 40px rgba(0,0,0,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 
 }
 
 .booking-frame iframe{
 
-border:none;
+    width:100%;
 
-border-radius:18px;
+    height:900px;
 
-width:100%;
+    border:none;
+
+    border-radius:18px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:900px){
+
+    nav{
+
+        display:none;
+
+    }
+
+    .hero h1{
+
+        font-size:58px;
+
+    }
+
+    .section-title h2,
+
+    .cta h2{
+
+        font-size:42px;
+
+    }
+
+    .card{
+
+        padding:40px;
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .hero{
+
+        padding:0 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero h5{
+
+        font-size:12px;
+
+        letter-spacing:4px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .primary-btn,
+
+    .secondary-btn{
+
+        width:220px;
+
+        text-align:center;
+
+    }
+
+    section{
+
+        padding:80px 25px;
+
+    }
+
+    .section-title h2{
+
+        font-size:36px;
+
+    }
+
+    .branch,
+
+    .card{
+
+        padding:35px;
+
+    }
+
+    .small-hero h1{
+
+        font-size:42px;
+
+    }
 
 }
