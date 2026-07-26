@@ -34,9 +34,7 @@ Choose Your Branch
 </h1>
 
 <p class="book-description">
-
 Select your preferred branch to continue with your online appointment.
-
 </p>
 
 </div>
@@ -52,13 +50,13 @@ Select your preferred branch to continue with your online appointment.
 <!-- AYALA -->
 
 <div class="branch-card">
-   
-<img src="image/ayala.jpg">
+
+<img src="image/ayala.jpg" alt="Ayala Central Bloc">
 
 <h2>Ayala Central Bloc</h2>
 
 <p>
-📍 4th Floor, Ayala Central Bloc,
+📍 4th Floor, Ayala Central Bloc,<br>
 IT Park, Cebu City
 </p>
 
@@ -76,13 +74,13 @@ BOOK NOW →
 
 <div class="branch-card">
 
-<img src="image/metro.jpg">
+<img src="image/metro.jpg" alt="Metro Ayala">
 
 <h2>Metro Ayala</h2>
 
 <p>
-📍 7th Floor,
-Metro Ayala,
+📍 7th Floor,<br>
+Metro Ayala,<br>
 Cebu Business Park
 </p>
 
@@ -100,12 +98,12 @@ BOOK NOW →
 
 <div class="branch-card">
 
-<img src="image/smconsolacion.jpg">
+<img src="image/smconsolacion.jpg" alt="SM Consolacion">
 
 <h2>SM Consolacion</h2>
 
 <p>
-📍 2nd Floor,
+📍 2nd Floor,<br>
 SM City Consolacion
 </p>
 
@@ -123,13 +121,13 @@ BOOK NOW →
 
 <div class="branch-card">
 
-<img src="image/jmall.jpg">
+<img src="image/jmall.jpg" alt="SM JMall">
 
 <h2>SM JMall</h2>
 
 <p>
-📍 Level 3,
-SM JMall,
+📍 Level 3,<br>
+SM JMall,<br>
 Mandaue City
 </p>
 
@@ -154,9 +152,7 @@ BOOK NOW →
 <h3>GLAM U SALON</h3>
 
 <p class="tagline">
-
 Premium Nails & Lashes in Cebu
-
 </p>
 
 <div class="social-links">
@@ -214,7 +210,7 @@ All Rights Reserved.
 
 .book-description{
 
-    max-width:600px;
+    max-width:650px;
 
     margin:auto;
 
@@ -227,7 +223,7 @@ All Rights Reserved.
 }
 
 /* =====================================================
-   BRANCHES
+   BRANCH SECTION
 ===================================================== */
 
 .branches{
@@ -250,17 +246,17 @@ All Rights Reserved.
 
     background:#fff;
 
+    border:1px solid #ECECEC;
+
     border-radius:24px;
 
     overflow:hidden;
 
-    border:1px solid #eee;
+    text-align:center;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.06);
+    box-shadow:0 18px 45px rgba(0,0,0,.06);
 
     transition:.35s;
-
-    text-align:center;
 
     padding-bottom:35px;
 
@@ -270,7 +266,7 @@ All Rights Reserved.
 
     transform:translateY(-8px);
 
-    box-shadow:0 25px 45px rgba(0,0,0,.10);
+    box-shadow:0 25px 55px rgba(0,0,0,.10);
 
 }
 
@@ -278,7 +274,7 @@ All Rights Reserved.
 
     width:100%;
 
-    height:320px;
+    height:300px;
 
     object-fit:cover;
 
@@ -292,7 +288,9 @@ All Rights Reserved.
 
     font-size:40px;
 
-    margin:30px 20px 15px;
+    margin:28px 20px 15px;
+
+    color:#111;
 
 }
 
@@ -300,31 +298,27 @@ All Rights Reserved.
 
     color:#666;
 
-    line-height:1.7;
-
     margin:8px 30px;
+
+    line-height:1.7;
 
     font-size:15px;
 
 }
 
-/* =====================================================
-   BOOK BUTTON
-===================================================== */
-
 .branch-btn{
 
     display:inline-block;
 
-    margin-top:25px;
-
-    padding:16px 34px;
+    margin-top:28px;
 
     background:#111;
 
     color:#fff;
 
     text-decoration:none;
+
+    padding:16px 40px;
 
     border-radius:999px;
 
@@ -348,17 +342,11 @@ All Rights Reserved.
    RESPONSIVE
 ===================================================== */
 
-@media(max-width:900px){
+@media(max-width:992px){
 
     .branch-grid{
 
         grid-template-columns:1fr;
-
-    }
-
-    .book-hero h1{
-
-        font-size:52px;
 
     }
 
@@ -368,7 +356,13 @@ All Rights Reserved.
 
     .book-hero{
 
-        padding:140px 20px 70px;
+        padding:140px 20px 80px;
+
+    }
+
+    .book-hero h1{
+
+        font-size:52px;
 
     }
 
