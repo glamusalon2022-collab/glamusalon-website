@@ -214,9 +214,7 @@ ul{
 
     opacity:.55;
 
-}
-
-/* ==========================================
+}/* ==========================================
    HERO
 ========================================== */
 
@@ -407,7 +405,7 @@ ul{
 
     }
 
-/* ==========================================
+}/* ==========================================
    FOOTER
 ========================================== */
 
@@ -596,121 +594,193 @@ ul{
 
 }
 
-/* ==========================================
-   LUXURY FINISH
+}/* ==========================================
+   FOOTER
 ========================================== */
 
-::selection{
+.footer{
 
-    background:#111;
+    background:#ffffff;
 
-    color:#fff;
+    padding:80px 20px;
 
-}
+    text-align:center;
 
-::-webkit-scrollbar{
-
-    width:8px;
+    border-top:1px solid #ececec;
 
 }
 
-::-webkit-scrollbar-track{
+.footer-content{
 
-    background:#f5f5f5;
+    max-width:800px;
 
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#999;
-
-    border-radius:20px;
+    margin:auto;
 
 }
 
-::-webkit-scrollbar-thumb:hover{
+.footer h3{
 
-    background:#555;
+    font-family:'Cormorant Garamond',serif;
 
-}
+    font-size:2.4rem;
 
-/* ==========================================
-   HOVER EFFECTS
-========================================== */
+    font-weight:600;
 
-.logo,
-.primary-btn,
-.secondary-btn,
-.social-links a,
-.mobile-nav a{
+    letter-spacing:3px;
 
-    transition:all .35s ease;
+    margin-bottom:10px;
 
 }
 
-.logo:hover{
+.footer-tagline{
 
-    opacity:.8;
+    font-size:1rem;
+
+    color:#777;
+
+    letter-spacing:2px;
+
+    margin-bottom:30px;
 
 }
 
-.primary-btn:hover,
-.secondary-btn:hover{
+.social-links{
 
-    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+.social-links a{
+
+    color:#111;
+
+    font-weight:500;
+
+    transition:.3s;
 
 }
 
 .social-links a:hover{
 
-    transform:translateY(-2px);
+    opacity:.6;
+
+}
+
+.copyright{
+
+    color:#888;
+
+    font-size:.9rem;
 
 }
 
 /* ==========================================
-   FADE IN
+   RESPONSIVE
 ========================================== */
 
-.fade{
+@media(max-width:768px){
 
-    opacity:0;
+.hero{
 
-    transform:translateY(30px);
-
-    transition:all .8s ease;
+    padding:0 25px;
 
 }
 
-.fade.show{
+.hero h1{
 
-    opacity:1;
+    font-size:3.5rem;
 
-    transform:translateY(0);
+    letter-spacing:3px;
+
+}
+
+.hero-subtitle{
+
+    font-size:.8rem;
+
+    letter-spacing:3px;
+
+}
+
+.hero-description{
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+    max-width:300px;
+
+}
+
+.logo{
+
+    font-size:1.6rem;
+
+}
+
+.mobile-nav a{
+
+    font-size:1.8rem;
+
+}
+
+.footer{
+
+    padding:60px 20px;
+
+}
+
+.footer h3{
+
+    font-size:2rem;
+
+}
 
 }
 
 /* ==========================================
-   SECTION SPACING
+   LARGE SCREENS
 ========================================== */
 
-section{
+@media(min-width:1200px){
 
-    position:relative;
+.hero-content{
 
-}
-
-h1,h2,h3{
-
-    font-family:'Cormorant Garamond',serif;
+    max-width:900px;
 
 }
 
-p{
+.hero h1{
 
-    font-family:'Inter',sans-serif;
+    font-size:7rem;
 
 }
 
-/* ==========================================
-   END OF STYLE.CSS
-========================================== */
+.hero-description{
+
+    font-size:1.15rem;
+
+}
+
+}
