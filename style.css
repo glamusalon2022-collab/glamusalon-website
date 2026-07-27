@@ -845,3 +845,46 @@ background-position:center top;
 .service-images img:hover{
     transform:scale(1.02);
 }
+/* FEATURED SERVICES */
+
+.featured-services{
+    padding:120px 20px;
+    background:#f8f7f5;
+    text-align:center;
+}
+
+.featured-services h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    margin:20px 0 60px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+}
+
+.service-box{
+    background:#fff;
+    padding:50px 40px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+}
+
+.service-box h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.service-box p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+}
