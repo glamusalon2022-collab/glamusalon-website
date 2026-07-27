@@ -365,30 +365,5 @@ nav a:hover{
         max-width:280px;
         text-align:center;
     }
-.founder{
-    padding:100px 0;
-}
-
-.founder-content{
-    display:flex;
-    align-items:center;
-    gap:60px;
-    flex-wrap:wrap;
-}
-
-.founder-image{
-    flex:1;
-}
-
-.founder-image img{
-    width:100%;
-    max-width:450px;
-    border-radius:25px;
-    display:block;
-    margin:auto;
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
-}
-
-.founder-text{
-    flex:1;
-}
+    
+     }
