@@ -1,9 +1,7 @@
-/* =====================================================
+/* ==========================================
    GLAM U SALON
-   Luxury Minimal Style
-===================================================== */
-
-/* RESET */
+   Luxury Website
+========================================== */
 
 *{
     margin:0;
@@ -17,906 +15,203 @@ html{
 
 body{
     font-family:'Inter',sans-serif;
-    background:#FAF9F7;
-    color:#1A1A1A;
+    background:#f8f7f5;
+    color:#111;
     overflow-x:hidden;
-    line-height:1.6;
+    line-height:1.7;
 }
 
-/* =====================================================
-   CONTAINER
-===================================================== */
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
 
 .container{
-    width:90%;
-    max-width:1280px;
+    width:min(90%,1200px);
     margin:auto;
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
+/* ==========================================
+   NAVBAR
+========================================== */
 
 .navbar{
+
     position:fixed;
+
     top:0;
+
     left:0;
+
     width:100%;
-    height:90px;
+
     z-index:999;
-    background:rgba(250,249,247,.88);
+
+    padding:24px 0;
+
+    transition:.35s;
+
+    background:rgba(255,255,255,.12);
+
     backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(0,0,0,.05);
+
+    -webkit-backdrop-filter:blur(18px);
+
+}
+
+.navbar.scrolled{
+
+    background:#ffffffee;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
 }
 
 .navbar .container{
-    height:90px;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
 }
 
 .logo{
-    text-decoration:none;
-    color:#111;
+
     font-family:'Cormorant Garamond',serif;
-    font-size:38px;
-    font-weight:700;
+
+    font-size:2rem;
+
+    font-weight:600;
+
     letter-spacing:3px;
+
+    color:#fff;
+
 }
 
-/* =====================================================
-   MENU BUTTON
-===================================================== */
+.navbar.scrolled .logo{
+
+    color:#111;
+
+}
 
 .menu-btn{
+
     background:none;
+
     border:none;
+
+    font-size:2rem;
+
+    color:#fff;
+
     cursor:pointer;
-    color:#111;
-    font-size:34px;
+
     transition:.3s;
+
+}
+
+.navbar.scrolled .menu-btn{
+
+    color:#111;
+
 }
 
 .menu-btn:hover{
-    color:#B79D73;
+
+    transform:scale(1.1);
+
 }
 
-/* =====================================================
-   FULL SCREEN MENU
-===================================================== */
+/* ==========================================
+   MOBILE MENU
+========================================== */
 
 .menu-overlay{
+
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    background:#FAF9F7;
+
+    inset:0;
+
+    background:#ffffff;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    visibility:hidden;
-    opacity:0;
-    transition:.4s;
+
+    flex-direction:column;
+
+    transform:translateY(-100%);
+
+    transition:.45s ease;
+
     z-index:1000;
+
 }
 
 .menu-overlay.active{
-    visibility:visible;
-    opacity:1;
+
+    transform:translateY(0);
+
 }
 
 .close-btn{
+
     position:absolute;
-    top:35px;
-    right:40px;
-    background:none;
+
+    top:30px;
+
+    right:30px;
+
     border:none;
-    font-size:42px;
+
+    background:none;
+
+    font-size:2rem;
+
     cursor:pointer;
-    color:#111;
+
 }
 
 .mobile-nav{
+
     display:flex;
+
     flex-direction:column;
-    gap:35px;
+
+    gap:30px;
+
     text-align:center;
+
 }
 
 .mobile-nav a{
-    text-decoration:none;
-    color:#111;
+
     font-family:'Cormorant Garamond',serif;
-    font-size:46px;
+
+    font-size:2rem;
+
     letter-spacing:2px;
+
     transition:.3s;
+
 }
 
 .mobile-nav a:hover{
-    color:#B79D73;
-}
-/* =====================================================
-   HERO
-===================================================== */
 
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:120px 20px 80px;
-
-    background:
-    linear-gradient(
-        rgba(255,255,255,.45),
-        rgba(255,255,255,.75)
-    ),
-    url("image/banner.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-}
-
-.hero-content{
-
-    max-width:900px;
-
-}
-
-.hero-subtitle{
-
-    color:#B79D73;
-
-    letter-spacing:8px;
-
-    text-transform:uppercase;
-
-    font-size:14px;
-
-    font-weight:500;
-
-    margin-bottom:35px;
-
-}
-
-.hero h1{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:110px;
-
-    font-weight:700;
-
-    line-height:1;
-
-    color:#111;
-
-    margin-bottom:60px;
-
-}
-
-/* =====================================================
-   HERO BUTTONS
-===================================================== */
-
-.hero-buttons{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:20px;
-
-}
-
-.primary-btn,
-.secondary-btn{
-
-    width:320px;
-
-    padding:18px 28px;
-
-    border-radius:999px;
-
-    text-decoration:none;
-
-    text-align:center;
-
-    font-size:15px;
-
-    font-weight:500;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    transition:all .35s ease;
-
-}
-
-.primary-btn{
-
-    background:#111;
-
-    color:#fff;
-
-    border:1px solid #111;
-
-}
-
-.primary-btn:hover{
-
-    background:#B79D73;
-
-    border-color:#B79D73;
-
-    transform:translateY(-3px);
-
-}
-
-.secondary-btn{
-
-    background:transparent;
-
-    color:#111;
-
-    border:1px solid #111;
-
-}
-
-.secondary-btn:hover{
-
-    background:#111;
-
-    color:#fff;
-
-    transform:translateY(-3px);
-
-}
-/* =====================================================
-   FOOTER
-===================================================== */
-
-.footer{
-
-    padding:100px 20px 60px;
-
-    background:#FAF9F7;
-
-    text-align:center;
-
-}
-
-.footer-content{
-
-    max-width:700px;
-
-    margin:auto;
-
-}
-
-.footer h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:46px;
-
-    font-weight:700;
-
-    color:#111;
-
-    margin-bottom:12px;
-
-}
-
-.tagline{
-
-    color:#777;
-
-    font-size:15px;
-
-    letter-spacing:1px;
-
-    margin-bottom:28px;
-
-}
-
-.social-links{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:15px;
-
-    margin-bottom:30px;
-
-}
-
-.social-links span{
-
-    color:#999;
-
-}
-
-.social-links a{
-
-    text-decoration:none;
-
-    color:#111;
-
-    font-size:14px;
-
-    letter-spacing:2px;
-
-    transition:.3s;
-
-}
-
-.social-links a:hover{
-
-    color:#B79D73;
-
-}
-
-.copyright{
-
-    color:#777;
-
-    font-size:13px;
-
-    letter-spacing:1px;
-
-    line-height:1.8;
-
-}
-
-/* =====================================================
-   ANIMATIONS
-===================================================== */
-
-.hero-content{
-
-    animation:fadeUp 1.2s ease;
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-/* =====================================================
-   SCROLLBAR
-===================================================== */
-
-::-webkit-scrollbar{
-
-    width:8px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#F6F4F1;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#C7B08A;
-
-    border-radius:20px;
-
-}
-
-/* =====================================================
-   TEXT SELECTION
-===================================================== */
-
-::selection{
-
-    background:#B79D73;
-
-    color:#fff;
-
-}
-
-/* =====================================================
-   FOCUS
-===================================================== */
-
-a:focus,
-button:focus{
-
-    outline:2px solid #B79D73;
-
-    outline-offset:4px;
-
-}
-/* =====================================================
-   RESPONSIVE DESIGN
-===================================================== */
-
-/* ---------- Large Desktop ---------- */
-
-@media (max-width:1200px){
-
-    .hero h1{
-        font-size:90px;
-    }
-
-    .container{
-        width:92%;
-    }
-
-}
-
-/* ---------- Tablet ---------- */
-
-@media (max-width:992px){
-
-    .hero{
-
-        padding:120px 30px 80px;
-
-    }
-
-    .hero h1{
-
-        font-size:72px;
-
-    }
-
-    .hero-subtitle{
-
-        letter-spacing:6px;
-
-        font-size:13px;
-
-    }
-
-    .primary-btn,
-    .secondary-btn{
-
-        width:280px;
-
-    }
-
-    .footer h3{
-
-        font-size:40px;
-
-    }
-
-}
-
-/* ---------- Mobile ---------- */
-
-@media (max-width:768px){
-
-    .navbar{
-
-        height:80px;
-
-    }
-
-    .navbar .container{
-
-        height:80px;
-
-    }
-
-    .logo{
-
-        font-size:30px;
-
-        letter-spacing:2px;
-
-    }
-
-    .menu-btn{
-
-        font-size:30px;
-
-    }
-
-    .mobile-nav{
-
-        gap:28px;
-
-    }
-
-    .mobile-nav a{
-
-        font-size:34px;
-
-    }
-
-    .hero{
-
-        min-height:100vh;
-
-        padding:120px 25px 70px;
-
-    }
-
-    .hero-subtitle{
-
-        font-size:12px;
-
-        letter-spacing:4px;
-
-    }
-
-    .hero h1{
-
-        font-size:52px;
-
-        margin-bottom:40px;
-
-    }
-
-    .hero-buttons{
-
-        gap:16px;
-
-    }
-
-    .primary-btn,
-    .secondary-btn{
-
-        width:100%;
-
-        max-width:320px;
-
-        font-size:14px;
-
-        padding:16px 20px;
-
-    }
-
-    .footer{
-
-        padding:70px 20px 40px;
-
-    }
-
-    .footer h3{
-
-        font-size:34px;
-
-    }
-
-    .social-links{
-
-        flex-direction:column;
-
-        gap:12px;
-
-    }
-
-}
-
-/* ---------- Small Phones ---------- */
-
-@media (max-width:480px){
-
-    .hero{
-
-        padding:110px 20px 60px;
-
-    }
-
-    .hero-subtitle{
-
-        letter-spacing:3px;
-
-        font-size:11px;
-
-    }
-
-    .hero h1{
-
-        font-size:42px;
-
-    }
-
-    .logo{
-
-        font-size:26px;
-
-    }
-
-    .primary-btn,
-    .secondary-btn{
-
-        font-size:13px;
-
-        padding:15px 18px;
-
-    }
-
-    .footer h3{
-
-        font-size:30px;
-
-    }
-
-    .copyright{
-
-        font-size:12px;
-
-    }
-
-/* =====================================================
-   BOOK PAGE
-===================================================== */
-
-.book-hero{
-
-    padding:170px 20px 80px;
-
-    text-align:center;
-
-    background:#FAF9F7;
-
-}
-
-.book-hero h1{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:72px;
-
-    font-weight:700;
-
-    color:#111;
-
-    margin-bottom:20px;
-
-}
-
-.book-description{
-
-    max-width:650px;
-
-    margin:auto;
-
-    font-size:18px;
-
-    color:#666;
-
-    line-height:1.8;
-
-}
-
-/* =====================================================
-   BRANCHES
-===================================================== */
-
-.branches{
-
-    padding:30px 20px 120px;
-
-}
-
-.branch-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:40px;
-
-    max-width:1300px;
-
-    margin:auto;
-
-}
-
-.branch-card{
-
-    background:#fff;
-
-    border-radius:26px;
-
-    overflow:hidden;
-
-    border:1px solid #ECECEC;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.06);
-
-    transition:.35s;
-
-}
-
-.branch-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 30px 70px rgba(0,0,0,.10);
-
-}
-
-.branch-card img{
-
-    width:100%;
-
-    height:320px;
-
-    object-fit:cover;
-
-    display:block;
-
-}
-
-.branch-info{
-
-    padding:35px;
-
-    text-align:center;
-
-}
-
-.branch-info h2{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:40px;
-
-    margin-bottom:18px;
-
-    color:#111;
-
-}
-
-.branch-info p{
-
-    color:#666;
-
-    font-size:15px;
-
-    line-height:1.8;
-
-    margin-bottom:12px;
-
-}
-
-.branch-btn{
-
-    display:inline-block;
-
-    margin-top:25px;
-
-    padding:16px 42px;
-
-    border-radius:999px;
-
-    background:#111;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    text-transform:uppercase;
-
-    letter-spacing:2px;
-
-    font-size:14px;
-
-    transition:.35s;
-
-}
-
-.branch-btn:hover{
-
-    background:#B79D73;
-
-}
-
-/* =====================================================
-   BOOK PAGE RESPONSIVE
-===================================================== */
-
-@media (max-width:992px){
-
-    .branch-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
-@media (max-width:768px){
-
-    .book-hero{
-
-        padding:140px 25px 70px;
-
-    }
-
-    .book-hero h1{
-
-        font-size:52px;
-
-    }
-
-    .book-description{
-
-        font-size:16px;
-
-    }
-
-    .branch-card img{
-
-        height:250px;
-
-    }
-
-    .branch-info{
-
-        padding:28px;
-
-    }
-
-    .branch-info h2{
-
-        font-size:34px;
-
-    }
-
-}
-
-@media (max-width:480px){
-
-    .book-hero h1{
-
-        font-size:42px;
-
-    }
-
-    .branch-card img{
-
-        height:220px;
-
-    }
-
-    .branch-btn{
-
-        width:100%;
-
-    }
+    opacity:.55;
 
 }
