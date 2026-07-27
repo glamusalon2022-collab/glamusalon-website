@@ -25,7 +25,32 @@ img{
     width:100%;
     display:block;
 }
+/* SERVICES HERO */
 
+.services-hero{
+    padding:160px 20px 80px;
+    text-align:center;
+    background:#f8f7f5;
+}
+
+.services-hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    margin:20px 0;
+}
+
+.section-subtitle{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#888;
+}
+
+.section-description{
+    max-width:650px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
 a{
     text-decoration:none;
     color:inherit;
