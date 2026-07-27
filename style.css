@@ -888,3 +888,24 @@ background-position:center top;
     line-height:1.8;
     margin-bottom:30px;
 }
+/* CTA SECTION */
+
+.cta-section{
+    padding:120px 20px;
+    text-align:center;
+    background:#111;
+    color:#fff;
+}
+
+.cta-section h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.cta-section p{
+    max-width:650px;
+    margin:0 auto 40px;
+    color:#ddd;
+    line-height:1.8;
+}
