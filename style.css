@@ -1,4 +1,23 @@
-/* ==========================================
+.branch-image{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.branch{
+    background:#fff;
+    border-radius:25px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.branch:hover{
+    transform:translateY(-8px);
+}/* ==========================================
    GLAM U SALON - LUXURY WEBSITE
 ========================================== */
 
