@@ -797,6 +797,25 @@ background-position:center top;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.35s;
 }
+   .menu-section{
+    padding:40px 20px;
+}
+
+.menu-section h2{
+    font-family:'Cormorant Garamond',serif;
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:30px;
+}
+
+.menu-section img{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    display:block;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
 
 .service-images img:hover{
     transform:scale(1.02);
