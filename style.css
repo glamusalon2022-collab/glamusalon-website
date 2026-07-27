@@ -1,6 +1,5 @@
 /* ==========================================
-   GLAM U SALON
-   Luxury Website
+   GLAM U SALON - LUXURY WEBSITE
 ========================================== */
 
 *{
@@ -17,47 +16,18 @@ body{
     font-family:'Inter',sans-serif;
     background:#f8f7f5;
     color:#111;
-    overflow-x:hidden;
     line-height:1.7;
+    overflow-x:hidden;
 }
 
 img{
-    width:100%;
+    max-width:100%;
     display:block;
 }
-/* SERVICES HERO */
 
-.services-hero{
-    padding:160px 20px 80px;
-    text-align:center;
-    background:#f8f7f5;
-}
-
-.services-hero h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:4rem;
-    margin:20px 0;
-}
-
-.section-subtitle{
-    letter-spacing:4px;
-    text-transform:uppercase;
-    color:#888;
-}
-
-.section-description{
-    max-width:650px;
-    margin:auto;
-    color:#666;
-    line-height:1.8;
-}
 a{
     text-decoration:none;
     color:inherit;
-}
-
-ul{
-    list-style:none;
 }
 
 .container{
@@ -65,798 +35,161 @@ ul{
     margin:auto;
 }
 
-/* ==========================================
+/* ==========================
    NAVBAR
-========================================== */
+========================== */
 
 .navbar{
-
     position:fixed;
-
     top:0;
-
     left:0;
-
     width:100%;
-
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
     z-index:999;
-
-    padding:24px 0;
-
-    transition:.35s;
-
-    background:rgba(255,255,255,.12);
-
-    backdrop-filter:blur(18px);
-
-    -webkit-backdrop-filter:blur(18px);
-
-}
-
-.navbar.scrolled{
-
-    background:#ffffffee;
-
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
-
+    padding:20px 0;
 }
 
 .navbar .container{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
 }
 
 .logo img{
     height:55px;
     width:auto;
-    display:block;
-    transition:.3s ease;
 }
 
-.logo img:hover{
-    opacity:.8;
-}
-
-.navbar.scrolled .logo{
-
-    color:#111;
-
-}
-
-.menu-btn{
-
-    background:none;
-
-    border:none;
-
-    font-size:2rem;
-
-    color:#fff;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.navbar.scrolled .menu-btn{
-
-    color:#111;
-
-}
-
-.menu-btn:hover{
-
-    transform:scale(1.1);
-
-}
-
-/* ==========================================
-   MOBILE MENU
-========================================== */
-
-.menu-overlay{
-
-    position:fixed;
-
-    inset:0;
-
-    background:#ffffff;
-
+nav{
     display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    flex-direction:column;
-
-    transform:translateY(-100%);
-
-    transition:.45s ease;
-
-    z-index:1000;
-
-}
-
-.menu-overlay.active{
-
-    transform:translateY(0);
-
-}
-
-.close-btn{
-
-    position:absolute;
-
-    top:30px;
-
-    right:30px;
-
-    border:none;
-
-    background:none;
-
-    font-size:2rem;
-
-    cursor:pointer;
-
-}
-
-.mobile-nav{
-
-    display:flex;
-
-    flex-direction:column;
-
     gap:30px;
-
-    text-align:center;
-
+    align-items:center;
 }
 
-.mobile-nav a{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:2rem;
-
-    letter-spacing:2px;
-
+nav a{
+    font-weight:500;
     transition:.3s;
-
 }
 
-.mobile-nav a:hover{
+nav a:hover{
+    opacity:.6;
+}
 
-    opacity:.55;
+.book-btn{
+    background:#111;
+    color:#fff;
+    padding:12px 26px;
+    border-radius:40px;
+}
 
-}/* ==========================================
+/* ==========================
    HERO
-========================================== */
+========================== */
 
 .hero{
-
     position:relative;
-
-    width:100%;
-
     height:100vh;
-   
-background:url("image/banner.jpg") no-repeat;
-background-size:cover;
-background-position:center top;
-
+    background:url("image/banner.jpg") center/cover no-repeat;
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
-
 }
 
 .hero-overlay{
-
     position:absolute;
-
     inset:0;
-
-    background:linear-gradient(
-        rgba(0,0,0,.35),
-        rgba(0,0,0,.35)
-    );
-
+    background:rgba(0,0,0,.35);
 }
 
 .hero-content{
-
     position:relative;
-
-    z-index:2;
-
-    width:min(95%,1100px);
-
     color:#fff;
-
-    animation:fadeUp 1.2s ease;
-
+    z-index:2;
 }
 
 .hero-subtitle{
-
-    font-size:.9rem;
-
-    letter-spacing:5px;
-
+    letter-spacing:4px;
     text-transform:uppercase;
-
-    margin-bottom:20px;
-
-    font-weight:500;
-
+    margin-bottom:15px;
 }
 
 .hero h1{
-
     font-family:'Cormorant Garamond',serif;
-
-    font-size:clamp(3rem,7vw,5.8rem);
-
-    font-weight:600;
-
-    letter-spacing:4px;
-
+    font-size:clamp(3rem,7vw,6rem);
     margin-bottom:20px;
-
-    white-space:nowrap;
-
 }
 
 .hero-description{
-
     max-width:650px;
-
     margin:auto;
-
-    font-size:1.05rem;
-
-    line-height:1.9;
-
-    opacity:.95;
-
-    margin-bottom:45px;
-
+    margin-bottom:40px;
 }
 
-.hero-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-/* ==========================================
+/* ==========================
    BUTTONS
-========================================== */
+========================== */
+
+.primary-btn,
+.secondary-btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:40px;
+    transition:.3s;
+}
 
 .primary-btn{
-
     background:#111;
-
     color:#fff;
-
-    padding:16px 38px;
-
-    border-radius:50px;
-
-    font-weight:600;
-
-    letter-spacing:2px;
-
-    transition:.35s;
-
 }
 
 .primary-btn:hover{
-
-    background:#fff;
-
-    color:#111;
-
-    transform:translateY(-3px);
-
+    background:#333;
 }
 
 .secondary-btn{
-
     border:1px solid #fff;
-
     color:#fff;
-
-    padding:16px 38px;
-
-    border-radius:50px;
-
-    font-weight:600;
-
-    letter-spacing:2px;
-
-    transition:.35s;
-
 }
 
 .secondary-btn:hover{
-
     background:#fff;
-
     color:#111;
-
-    transform:translateY(-3px);
-
 }
 
-/* ==========================================
-   ANIMATION
-========================================== */
+/* ==========================
+   PAGE HERO
+========================== */
 
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}/* ==========================================
-   FOOTER
-========================================== */
-
-.footer{
-
-    background:#ffffff;
-
-    padding:80px 20px;
-
+.page-hero{
+    padding:170px 20px 80px;
     text-align:center;
-
-    border-top:1px solid #ececec;
-
 }
 
-.footer-content{
-
-    max-width:800px;
-
-    margin:auto;
-
-}
-
-.footer h3{
-
+.page-hero h1{
     font-family:'Cormorant Garamond',serif;
-
-    font-size:2.4rem;
-
-    font-weight:600;
-
-    letter-spacing:3px;
-
-    margin-bottom:10px;
-
+    font-size:4rem;
+    margin:20px 0;
 }
 
-.footer-tagline{
-
-    font-size:1rem;
-
-    color:#777;
-
-    letter-spacing:2px;
-
-    margin-bottom:30px;
-
-}
-
-.social-links{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:25px;
-
-    margin-bottom:30px;
-
-}
-
-.social-links a{
-
-    color:#111;
-
-    font-weight:500;
-
-    transition:.3s;
-
-}
-
-.social-links a:hover{
-
-    opacity:.6;
-
-}
-
-.copyright{
-
+.section-subtitle{
+    letter-spacing:4px;
     color:#888;
-
-    font-size:.9rem;
-
+    text-transform:uppercase;
 }
 
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media(max-width:768px){
-
-.hero{
-
-    padding:0 25px;
-
-}
-
-.hero h1{
-
-    font-size:3.5rem;
-
-    letter-spacing:3px;
-
-}
-
-.hero-subtitle{
-
-    font-size:.8rem;
-
-    letter-spacing:3px;
-
-}
-
-.hero-description{
-
-    font-size:.95rem;
-
-    line-height:1.8;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-.primary-btn,
-.secondary-btn{
-
-    width:100%;
-
-    max-width:300px;
-
-}
-
-.logo{
-
-    font-size:1.6rem;
-
-}
-
-.mobile-nav a{
-
-    font-size:1.8rem;
-
-}
-
-.footer{
-
-    padding:60px 20px;
-
-}
-
-.footer h3{
-
-    font-size:2rem;
-
-}
-
-}
-
-/* ==========================================
-   LARGE SCREENS
-========================================== */
-
-@media(min-width:1200px){
-
-.hero-content{
-
-    max-width:900px;
-
-}
-
-.hero h1{
-
-    font-size:7rem;
-
-}
-
-.hero-description{
-
-    font-size:1.15rem;
-
-}
-
-}/* ==========================================
-   FOOTER
-========================================== */
-
-.footer{
-
-    background:#ffffff;
-
-    padding:80px 20px;
-
-    text-align:center;
-
-    border-top:1px solid #ececec;
-
-}
-
-.footer-content{
-
-    max-width:800px;
-
+.section-description{
+    max-width:650px;
     margin:auto;
-
+    color:#666;
 }
-
-.footer h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:2.4rem;
-
-    font-weight:600;
-
-    letter-spacing:3px;
-
-    margin-bottom:10px;
-
-}
-
-.footer-tagline{
-
-    font-size:1rem;
-
-    color:#777;
-
-    letter-spacing:2px;
-
-    margin-bottom:30px;
-
-}
-
-.social-links{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:25px;
-
-    margin-bottom:30px;
-
-}
-
-.social-links a{
-
-    color:#111;
-
-    font-weight:500;
-
-    transition:.3s;
-
-}
-
-.social-links a:hover{
-
-    opacity:.6;
-
-}
-
-.copyright{
-
-    color:#888;
-
-    font-size:.9rem;
-
-}
-
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media(max-width:768px){
-
-.hero{
-
-    padding:0 25px;
-
-}
-
-.hero h1{
-
-    font-size:3.5rem;
-
-    letter-spacing:3px;
-
-}
-
-.hero-subtitle{
-
-    font-size:.8rem;
-
-    letter-spacing:3px;
-
-}
-
-.hero-description{
-
-    font-size:.95rem;
-
-    line-height:1.8;
-
-}
-
-.hero-buttons{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-.primary-btn,
-.secondary-btn{
-
-    width:100%;
-
-    max-width:300px;
-
-}
-
-.logo{
-
-    font-size:1.6rem;
-
-}
-
-.mobile-nav a{
-
-    font-size:1.8rem;
-
-}
-
-.footer{
-
-    padding:60px 20px;
-
-}
-
-.footer h3{
-
-    font-size:2rem;
-
-}
-
-}
-
-/* ==========================================
-   LARGE SCREENS
-========================================== */
-
-@media(min-width:1200px){
-
-.hero-content{
-
-    max-width:900px;
-
-}
-
-.hero h1{
-
-    font-size:7rem;
-
-}
-
-.hero-description{
-
-    font-size:1.15rem;
-
-}
-
-.service-images{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-    padding:30px;
-}
-
-.service-images img{
-    width:100%;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-}
-   .menu-section{
-    padding:40px 20px;
-}
-
-.menu-section h2{
-    font-family:'Cormorant Garamond',serif;
-    text-align:center;
-    font-size:2.5rem;
-    margin-bottom:30px;
-}
-
-.menu-section img{
-    width:100%;
-    max-width:900px;
-    margin:auto;
-    display:block;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-}
-
-.service-images img:hover{
-    transform:scale(1.02);
-}
-/* FEATURED SERVICES */
-
-.featured-services{
-    padding:120px 20px;
-    background:#f8f7f5;
-    text-align:center;
-}
-
-.featured-services h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:3rem;
-    margin:20px 0 60px;
+/* ==========================
+   SERVICES
+========================== */
+
+.service-selection{
+    padding:80px 20px 120px;
 }
 
 .service-grid{
@@ -865,102 +198,152 @@ background-position:center top;
     gap:40px;
 }
 
-.service-box{
+.service-card{
     background:#fff;
-    padding:50px 40px;
     border-radius:20px;
-    box-shadow:0 12px 35px rgba(0,0,0,.06);
-    transition:.3s;
+    padding:50px 40px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s ease;
 }
 
-.service-box:hover{
+.service-card:hover{
     transform:translateY(-8px);
 }
 
-.service-box h3{
+.service-card h3{
     font-family:'Cormorant Garamond',serif;
-    font-size:2.2rem;
-    margin-bottom:20px;
+    font-size:2.3rem;
+    margin-bottom:15px;
 }
 
-.service-box p{
+.service-card p{
     color:#666;
-    line-height:1.8;
     margin-bottom:30px;
 }
-/* CTA SECTION */
 
-.cta-section{
-    padding:120px 20px;
-    text-align:center;
-    background:#111;
-    color:#fff;
+/* ==========================
+   RATE PAGES
+========================== */
+
+.service-rates{
+    padding:80px 20px 120px;
 }
 
-.cta-section h2{
+.service-rates h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:3rem;
-    margin-bottom:20px;
+    text-align:center;
+    font-size:2.3rem;
+    margin:40px 0 25px;
 }
 
-.cta-section p{
-    max-width:650px;
-    margin:0 auto 40px;
-    color:#ddd;
-    line-height:1.8;
+.rate-image{
+    width:100%;
+    max-width:900px;
+    margin:0 auto 50px;
+    display:block;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
 }
-/* LOCATION */
+
+/* ==========================
+   LOCATION
+========================== */
 
 .location{
     padding:120px 20px;
     text-align:center;
-    background:#fff;
 }
 
 .location h2{
     font-family:'Cormorant Garamond',serif;
     font-size:3rem;
-    margin:20px 0;
-}
-
-.location-text{
-    max-width:700px;
-    margin:0 auto 60px;
-    color:#666;
+    margin:20px 0 50px;
 }
 
 .branches{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:25px;
-    margin-bottom:50px;
 }
 
 .branch{
-    background:#f8f7f5;
+    background:#fff;
     padding:35px;
     border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
 }
 
 .branch h3{
     font-family:'Cormorant Garamond',serif;
     font-size:1.8rem;
 }
-   /* SERVICE MENUS */
 
-.service-menus{
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+    background:#fff;
     padding:80px 20px;
+    text-align:center;
+    border-top:1px solid #ececec;
 }
 
-.service-menus .container{
-    max-width:1000px;
-    margin:auto;
+.footer h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.3rem;
+    margin-bottom:10px;
 }
 
-.menu-image{
-    width:100%;
-    display:block;
-    margin:0 auto 40px;
-    border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+.footer-tagline{
+    color:#777;
+    margin-bottom:25px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.copyright{
+    color:#888;
+    font-size:.9rem;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    nav{
+        gap:15px;
+        font-size:.9rem;
+    }
+
+    .hero h1{
+        font-size:3.2rem;
+    }
+
+    .page-hero h1{
+        font-size:2.8rem;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .branches{
+        grid-template-columns:1fr;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        max-width:280px;
+        text-align:center;
+    }
 }
