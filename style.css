@@ -909,3 +909,40 @@ background-position:center top;
     color:#ddd;
     line-height:1.8;
 }
+/* LOCATION */
+
+.location{
+    padding:120px 20px;
+    text-align:center;
+    background:#fff;
+}
+
+.location h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    margin:20px 0;
+}
+
+.location-text{
+    max-width:700px;
+    margin:0 auto 60px;
+    color:#666;
+}
+
+.branches{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.branch{
+    background:#f8f7f5;
+    padding:35px;
+    border-radius:20px;
+}
+
+.branch h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.8rem;
+}
