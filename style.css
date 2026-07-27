@@ -784,4 +784,20 @@ background-position:center top;
 
 }
 
+.service-images{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    padding:30px;
+}
+
+.service-images img{
+    width:100%;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.service-images img:hover{
+    transform:scale(1.02);
 }
