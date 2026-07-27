@@ -946,3 +946,21 @@ background-position:center top;
     font-family:'Cormorant Garamond',serif;
     font-size:1.8rem;
 }
+   /* SERVICE MENUS */
+
+.service-menus{
+    padding:80px 20px;
+}
+
+.service-menus .container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.menu-image{
+    width:100%;
+    display:block;
+    margin:0 auto 40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
