@@ -62,7 +62,18 @@ Since 2021, Glam U Salon has been dedicated to delivering premium nail and lash 
 
 <div class="founder-image">
 
-<img src="image/Mozhzheri.jpg" alt="Zab Acosta">
+<div class="slider">
+
+<div class="slides">
+
+<img src="image/founder1.jpg" alt="Founder">
+<img src="image/founder2.jpg" alt="Tokyo Training">
+<img src="image/founder3.jpg" alt="Mozhzheri">
+<img src="image/founder4.jpg" alt="Salon Team">
+
+</div>
+
+</div>
 
 </div>
 
@@ -118,7 +129,30 @@ Instagram
 
 </footer>
 
-<script src="script.js"></script>
+<script>
+const slider = document.querySelector(".slides");
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener("mousedown", (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener("mouseleave", () => isDown = false);
+slider.addEventListener("mouseup", () => isDown = false);
+
+slider.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2;
+    slider.scrollLeft = scrollLeft - walk;
+});
+</script>
 
 </body>
 
