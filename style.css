@@ -415,3 +415,10 @@ nav a:hover{
 .founder-text p{
     text-align:left;
 }
+.branch-contact {
+  font-size: 16px;
+  color: #666;
+  margin: 8px 0 20px;
+  text-align: center;
+  font-weight: 500;
+}
