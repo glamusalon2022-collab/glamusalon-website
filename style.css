@@ -208,13 +208,14 @@ nav a:hover{
 ========================== */
 
 .page-hero{
-    padding:110px 20px 40px;
+    padding:110px 20px 20px;
     text-align:center;
 }
+
 .page-hero h1{
     font-family:'Cormorant Garamond',serif;
     font-size:4rem;
-    margin:20px 0;
+    margin:12px 0;
 }
 
 .section-subtitle{
@@ -225,7 +226,7 @@ nav a:hover{
 
 .section-description{
     max-width:650px;
-    margin:auto;
+    margin:0 auto;
     color:#666;
 }
 /* ==========================
